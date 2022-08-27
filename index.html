@@ -1,0 +1,29 @@
+
+<html>
+
+<form onsubmit="submitdetails(event)">
+    <label>UserName</label>
+<input type="text" name="username">
+<br>
+<br>
+<label>E-Mail</label>
+<input type="email" name="useremail">
+<br>
+<button>Submit</button>
+
+
+
+</form>
+<script>
+    function submitdetails(event){
+        event.preventDefault();
+let name1 = event.target.username.value;
+let email = event.target.useremail.value;
+localStorage.setItem('name',name1);
+localStorage.setItem('email',email);
+
+
+    }
+</script>
+
+</html>
